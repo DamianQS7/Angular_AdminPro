@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class NotFoundPageComponent {
 
+  public year: number = new Date().getFullYear();
 }
