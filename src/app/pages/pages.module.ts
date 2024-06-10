@@ -10,6 +10,9 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { ProgressComponent } from './progress/progress.component';
 import { ChartOneComponent } from './chart-one/chart-one.component';
 import { PagesComponent } from './pages.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { PagesComponent } from './pages.component';
     DashboardPageComponent,
     ProgressComponent,
     ChartOneComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,
@@ -27,10 +33,12 @@ import { PagesComponent } from './pages.component';
     SharedModule,
   ],
   exports: [
+    AccountSettingsComponent,
     DashboardPageComponent,
     ProgressComponent,
     ChartOneComponent,
-    PagesComponent
+    PagesComponent,
+    PromisesComponent
   ],
   providers: []
 })
