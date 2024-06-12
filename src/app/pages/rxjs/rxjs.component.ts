@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   templateUrl: './rxjs.component.html',
@@ -6,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class RxjsComponent {
 
+  constructor() {
+    const obs$ = new Observable(subscriber => {
+      setInterval(() => {
+
+      }, 1000)
+    });
+  }
 }
